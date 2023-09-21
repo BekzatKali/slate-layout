@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="text-white overflow-x-hidden">
+    <header class="mainContainer">
+        <div class="flex justify-between items-center py-2 headerok">
+            <div class="max-md:flex max-md:mr-auto">
+                <img src="/images/logo.svg" alt="">
+            </div>
+            <nav class="max-md:absolute max-md:w-full max-md:min-h-[20vh] max-md:top-[-100%] max-md:p-5 max-md:left-0 max-md:text-white" id="burger">
+                <ul class="flex items-center gap-10 max-md:flex-col">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="py-4 px-12 border max-md:py-2 max-md:px-8">Login</button>
+            <button id="closes" onclick="onToggle()" class="hidden md:hidden">
+                <img src="/images/close-outline.svg" alt="">
+            </button>
+            <button id="menuImage" onclick="onToggle()" class="hidden max-md:block max-md:w-[55px]">
+                <img src="/images/bx_bx-menu-alt-right.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="mainContainer">
+                <div class="max-w-[730px] my-0 mx-auto text-center py-16 ">
+                    <div class="max-md:max-w-[402px] max-md:mx-auto">
+                        <h1 class="text-6xl font-bold mb-14 max-md:text-[52px] max-md:font-normal max-md:leading-[62px]">Work at the speed of thought</h1>
+                        <p class="text-xl mb-28 max-md:text-[21px] max-md:leading-[30px]">Most calendars are designed for teams. Slate is designed for <br> freelancers who want a simple way to plan their schedule.</p>
+                    </div>
+                    <div class="flex gap-9 justify-center max-md:flex max-md:flex-col max-md:items-center max-md:gap-y-4">
+                        <button class="bg-blue-600 max-md:w-fit py-3 px-8 border-transparent border max-md:py-3 max-md:px-8
+                        ">Try For Free</button>
+                        <button class="border max-md:w-fit py-3 px-8 max-md:py-3 max-md:px-8">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features py-24">
+            <div class="mainContainer">
+               <div class="max-w-[602px] max-md:max-w-[430px] mx-auto text-center">
+                    <h2 class="uppercase text-5xl mb-8 max-md:text-[52px] max-md:font-normal max-md:leading-[62px]">Features</h2>
+                    <p class="text-xl mb-28">Most calendars are designed for teams. Slate is designed for <br>
+                    freelancers who want a simple way to plan their schedule.</p>
+               </div>
+               <div class="flex items-center max-md:flex max-md:flex-col max-md:gap-y-4 max-lg:flex max-lg:flex-col max-lg:gap-y-4">
+                <img src="/images/features-img.png" alt="" class="max-md:hidden">
+                <img src="/images/featuresMobilePhoto.png" alt="" class="hidden max-md:block">
+                <ul class="max-w-[310px] flex flex-col gap-y-10 max-md:flex max-md:flex-col max-md:items-center">
+                    <li class="max-md:px-8">
+                        <div class="flex items-center gap-2">
+                            <img src="/images/ic_round-restaurant-menu.svg" alt="">
+                            <h3 class="text-xl font-bold">A single source <br> of truth</h3>
+                        </div>
+                        <p>When you add work to your 
+                            Slate calendar we automatically 
+                            calculate useful insights 
+                        </p>
+                    </li>
+                    <li class="max-md:px-8">
+                        <div class="flex items-center gap-2">
+                            <img src="/images/mdi_alien-outline.svg" alt="">
+                            <h3 class="text-xl font-bold">Intuitive <br> interface</h3>
+                        </div>
+                        <p>When you add work to your 
+                            Slate calendar we automatically 
+                            calculate useful insights 
+                        </p>
+                    </li>
+                    <li class="max-md:px-8">
+                        <div class="flex items-center gap-2">
+                            <img src="/images/mdi_all-inclusive.svg" alt="">
+                            <h3 class="text-xl font-bold">Or with rules</h3>
+                        </div>
+                        <p>Or with rules
+                            When you add work to your 
+                            Slate calendar we automatically 
+                            calculate useful insights 
+                        </p>
+                    </li>
+                </ul>
+               </div>
+            </div>
+        </div>
+        <div class="py-24">
+            <div class="mainContainer">
+                <div class="max-w-[602px] mx-auto text-center max-md:max-w-[310px]">
+                    <h2 class="text-5xl mb-8 max-md:text-[52px] max-md:font-normal max-md:leading-[62px]">Contents</h2>
+                    <p class="text-xl mb-24">We focus on ergonomics and meeting you where you work. <br> 
+                    It's only a keystroke away.</p>
+               </div>
+               <div class="cards-wrapper text-center flex justify-center gap-6 max-md:flex max-md:flex-col max-md:items-center">
+                    <div class="bg-white max-w-[476px] text-black p-5 rounded-md flex flex-col max-md:max-w-[348px]">
+                        <h3 class="font-bold mb-8">Work</h3>
+                        <p class="max-w-[288px] mx-auto mb-14">
+                            Ever wondered if you're too reliant 
+                            on a client for work? Slate helps 
+                            you identify.</p>
+                        <button class="py-3 px-9 bg-blue-600 text-white w-fit mx-auto max-md:mb-4">Sign up</button>
+                        <img class="pb-8 mt-auto" src="/images/Macbook Pro.png" alt="">
+                    </div>
+                    <div class="bg-white max-w-[476px] text-black p-5 rounded-md flex flex-col justify-between max-md:max-w-[348px]">
+                        <h3 class="font-bold mb-8">Desing with real data</h3>
+                        <p class="max-w-[288px] mx-auto mb-14">Ever wondered if you're too reliant 
+                            on a client for work? Slate helps 
+                            you identify.</p>
+                        <button class="py-3 px-9 bg-blue-600 text-white w-fit mx-auto">Try for free</button>
+                        <img src="/images/Boards Notifications.png" alt="">
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="py-24">
+            <div class="mainContainer">
+                <div class="max-w-[602px] mx-auto text-center max-md:max-w-[310px]">
+                    <h2 class="text-5xl mb-8 max-md:text-[52px] max-md:font-normal max-md:leading-[62px]">Gallery</h2>
+                    <p class="text-xl mb-24">We focus on ergonomics and meeting you where you work. <br> 
+                    It's only a keystroke away.</p>
+               </div>
+               <div class="flex gap-x-9 justify-center mb-12 max-md:hidden max-lg:flex max-lg:flex-col max-lg:gap-y-3">
+                    <img class="rounded-md max-lg:w-[50%] max-lg:mx-auto" src="images/card-1.png" alt="">
+                    <img class="rounded-md max-lg:w-[50%] max-lg:mx-auto" src="images/card-2.png" alt="">
+                    <img class="rounded-md max-lg:w-[50%] max-lg:mx-auto" src="images/card-3.png" alt="">
+                    <img class="rounded-md max-lg:w-[50%] max-lg:mx-auto" src="images/card-4.png" alt="">
+               </div>
+               <div class="grid grid-flow-col gap-x-9 mb-14 max-md:hidden max-lg:flex max-lg:flex-col max-lg:gap-y-3">
+                    <img class="grid-cols-2 rounded-md max-lg:w-[50%] max-lg:mx-auto" src="/images/card-5.png" alt="">
+                    <img class="grid-cols-1 rounded-md max-lg:w-[50%] max-lg:mx-auto" src="/images/card-6.png" alt="">
+                    <img class="grid-cols-2 rounded-md max-lg:w-[50%] max-lg:mx-auto" src="/images/card-7.png" alt="">
+               </div>
+
+               <!-- Mobile only -->
+
+                <div class="hidden max-md:flex max-md:flex-col max-md:gap-y-8 max-md:items-center mb-14">
+                    <img class="rounded-md" src="/images/mobileGallery-1.png" alt="">
+                    <img class="rounded-md" src="/images/mobileGallery-2.png" alt="">
+                    <img class="rounded-md" src="/images/mobileGallery-3.png" alt="">
+                    <img class="rounded-md" src="/images/mobileGalleryFourth.png" alt="">
+                </div>
+
+               <!-- Mobile only -->
+
+               <div class="text-center"> 
+                <button class="border py-3 px-8 inline-block">See more</button>
+               </div>
+            </div>
+        </div>
+        <div class="py-24">
+            <div class="mainContainer">
+                <div class="max-w-[602px] mx-auto text-center max-md:max-w-[350px]">
+                    <h2 class="text-5xl mb-8 max-md:text-[52px] max-md:font-normal max-md:leading-[62px]">Partners</h2>
+                    <p class="text-xl mb-24">We focus on ergonomics and meeting you where you work. <br> 
+                    It's only a keystroke away.</p>
+               </div>
+               <div class="flex justify-center gap-x-14 mb-14 max-md:max-w-[300px] max-md:mx-auto max-md:grid max-md:grid-cols-3 max-md:place-items-center max-md:gap-y-9">
+                    <img src="/images/logos_apple-app-store.svg" alt="">
+                    <img src="/images/logos_apiary.svg" alt="">
+                    <img src="/images/logos_android-icon.svg" alt="">
+                    <img src="/images/logos_basecamp.svg" alt="">
+                    <img src="/images/logos_airbnb.svg" alt="">
+                    <img src="/images/logos_ibm.svg" alt="">
+               </div>
+               <div class="text-center"> 
+                <button class="border py-3 px-8 inline-block">All partners</button>
+               </div>
+            </div>
+        </div>
+        <div class="py-24">
+            <div class="mainContainer">
+                <div class="max-w-[602px] mx-auto text-center">
+                    <h2 class="text-5xl mb-12 max-md:text-[52px] max-md:font-normal max-md:leading-[62px">Testimonials</h2>
+               </div>
+               <div class="max-w-[883px] flex mx-auto justify-between max-md:flex max-md:flex-col max-md:items-center max-md:gap-y-3 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-3">
+                    <div class="tests-left flex flex-col gap-y-3">
+                        <div class="testimonial-card p-5 max-w-[430px] rounded-xl border max-md:max-w-[350px]">
+                            <div class="flex items-center gap-x-3 mb-5">
+                                <img src="/images/avatar.png" alt="">
+                                <div>
+                                    <h4>Claire Bell</h4>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            <p>Slate helps you see how many more days 
+                                you need to work to reach your financial 
+                                goal for the month and year. Slate helps 
+                                you see how many more days 
+                                you need to work to reach your financial 
+                                goal for the month and year.your financial 
+                                goal for the month and year.</p>
+                        </div>
+                        <div class="testimonial-card p-5 max-w-[430px] rounded-xl border max-md:max-w-[350px]">
+                            <div class="flex items-center gap-x-3 mb-5">
+                                <img src="/images/avatar (2).png" alt="">
+                                <div>
+                                    <h4>Ralph Fisher</h4>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
+                        </div>
+                    </div>
+                    <div class="tests-right flex flex-col gap-y-3">
+                        <div class="testimonial-card p-5 max-w-[430px] rounded-xl border max-md:max-w-[350px]">
+                            <div class="flex items-center gap-x-3 mb-5">
+                                <img src="/images/avatar (1).png" alt="">
+                                <div>
+                                    <h4>Francisco Lane</h4>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            <p>Slate helps you see how many more days 
+                                you need to work to reach your financial 
+                                goal for the month and year. Slate helps 
+                                you see how many more days 
+                                you need to work to reach your financial 
+                                goal for the month and year.</p>
+                        </div>
+                        
+                        <div class="testimonial-card p-5 max-w-[430px] rounded-xl border max-md:max-w-[350px]">
+                            <div class="flex items-center gap-x-3 mb-5">
+                                <img src="/images/avatar (3).png" alt="">
+                                <div>
+                                    <h4>Jorge Murphy</h4>
+                                    <p>Desingner</p>
+                                </div>
+                            </div>
+                            <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="py-24">
+            <div class="max-w-[1220px] max-md:min-w-full max-md:px-[40px] mx-auto bg-slate-700 flex justify-between items-center rounded-xl max-md:flex max-md:flex-col max-md:bg-transparent max-lg:flex max-lg:flex-col">
+                <div class="max-w-[544px] py-[17px] px-[70px] max-md:text-center max-md:px-0">
+                    <h2 class="text-[43px] mb-6 max-md:text-[50px] max-md:font-normal max-md:leading-[62px]">OpenType feature and Variable fonts</h2>
+                    <button class="bg-blue-600 py-3 px-8 border border-transparent max-md:mb-10">Try For Free</button>
+                </div>
+                <!-- <img src="/images/features-img.png" alt="" class="max-md:hidden">
+                <img src="/images/featuresMobilePhoto.png" alt="" class="hidden max-md:block"> -->
+                <img class="rounded-br-xl max-md:hidden" src="/images/Line Chart 1.png" alt="">
+                <img src="/images/openType.png" alt="" class="hidden max-md:block">
+            </div>
+        </div>
+    </main>
+    <footer class="py-20">
+        <div class="mainContainer">
+            <div class="flex justify-between max-md:flex-col max-md:gap-y-16 max-md:max-w-[320px] max-md:mx-auto">
+                <div class="flex justify-between max-w-[500px] gap-x-[75px] max-md:flex-col max-md:gap-y-16">
+                    <div>
+                        <h4 class="font-bold mb-6">Fingertipe</h4>
+                        <ul class="flex flex-col gap-y-[20px]">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6">Resources</h4>
+                        <ul class="flex flex-col gap-y-[20px]">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6">About</h4>
+                        <ul class="flex flex-col gap-y-[20px]">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-[320px]">
+                    <div class="flex items-center mb-4">
+                        <img src="/images/bx_bx-map.svg" alt="">
+                        <p class="text-sm">7480 Mockingbird Hill undefined </p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="/images/ic_baseline-phone-android.svg" alt="">
+                        <p class="text-sm">(239) 555-0108</p>
+                    </div>
+                    <div class="flex items-center gap-x-6">
+                        <a href="https://twitter.com/?lang=ru" target="_blank"><img src="/images/ant-design_twitter-outlined.svg" alt=""></a>
+                        <a href="https://ru-ru.facebook.com/" target="_blank"><img src="/images/ant-design_facebook-filled.svg" alt=""></a>
+                        <a href="https://ru.linkedin.com/" target="_blank"><img src="/images/ant-design_linkedin-filled.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function onToggle() {
+            const navs = document.getElementById('burger');
+            navs.classList.toggle('max-md:top-[80px]');
+
+            const closeButton = document.getElementById('closes');
+            closeButton.classList.toggle('hidden');
+            closeButton.classList.toggle('w-[55px]');
+
+            const menuButton = document.getElementById('menuImage');
+            menuButton.classList.toggle('max-md:hidden');
+            menuButton.classList.toggle('w-[55px]');
+        }
+    </script>
+</body>
+</html>

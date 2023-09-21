@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: rgba(24, 24, 24, 1);
+}
+.mainContainer {
+    max-width: 1120px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main {
+    background: url('../images/screens.png') center 500px no-repeat; 
+    padding-bottom: 1000px;
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .main {
+        background: url('../images/screens.png') center 700px no-repeat; 
+        padding-bottom: 1000px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .headerok {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main {
+        background: url('../images/screens.png') center 700px no-repeat; 
+        padding-bottom: 1000px;
+    }
+    #burger {
+        background: rgba(24, 24, 24, 1);
+    }
+}
+@media screen and (max-width: 375px) {
+    .main {
+        background: url('../images/screens.png') center 720px no-repeat; 
+        padding-bottom: 700px;
+    }
+}
